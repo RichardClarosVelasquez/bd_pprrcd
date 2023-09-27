@@ -10,7 +10,7 @@ const Pyramid = () => {
 
   return (
     <div className="m-4 md:m-10 mt-24  p-10 bg-white dark:bg-secondary-dark-bg rounded-3xl">
-      <ChartsHeader category="Mantenimiento" title="Food Comparison Chart" />
+      <ChartsHeader category="Mantenimiento" title="Pareto" />
       <div className="w-full">
         <AccumulationChartComponent
           id="pyramid-chart"
@@ -21,7 +21,7 @@ const Pyramid = () => {
           <Inject services={[AccumulationDataLabel, AccumulationTooltip, PyramidSeries, AccumulationLegend, AccumulationSelection]} />
           <AccumulationSeriesCollectionDirective>
             <AccumulationSeriesDirective
-              name="Food"
+              name="Sistema"
               dataSource={PyramidData}
               xName="x"
               yName="y"

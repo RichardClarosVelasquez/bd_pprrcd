@@ -1,17 +1,20 @@
 import React from 'react';
-import { AiOutlineCalendar, AiFillPieChart, AiOutlineDoubleRight, AiOutlinePieChart, AiOutlineShoppingCart, AiOutlineAreaChart, AiOutlineBarChart, AiOutlineStock } from 'react-icons/ai';
+// import { AiOutlineCalendar, AiFillPieChart, AiOutlineDoubleRight, AiOutlinePieChart, AiOutlineShoppingCart, AiOutlineAreaChart, AiOutlineBarChart, AiOutlineStock } from 'react-icons/ai';
+import { AiFillPieChart, AiOutlineDoubleRight, AiOutlineAreaChart } from 'react-icons/ai';
 import { FaTruckMoving } from 'react-icons/fa';
-import { FiShoppingBag, FiEdit, FiPieChart, FiBarChart, FiCreditCard, FiStar, FiShoppingCart } from 'react-icons/fi';
-import { BsKanban, BsFillGearFill, BsFillBarChartFill, BsBoxSeam, BsCurrencyDollar, BsShield, BsChatLeft } from 'react-icons/bs';
-import { BiColorFill } from 'react-icons/bi';
+// import { FiShoppingBag, FiEdit, FiPieChart, FiBarChart, FiCreditCard, FiStar, FiShoppingCart } from 'react-icons/fi';
+import { FiBarChart, FiCreditCard, FiStar, FiShoppingCart } from 'react-icons/fi';
+import { BsFillGearFill, BsFillBarChartFill, BsBoxSeam, BsCurrencyDollar, BsShield, BsChatLeft } from 'react-icons/bs';
+// import { BiColorFill } from 'react-icons/bi';
 import { IoMdContacts } from 'react-icons/io';
 import { GoAlert } from 'react-icons/go';
-import { RiContactsLine, RiStockLine } from 'react-icons/ri';
+// import { RiContactsLine, RiStockLine } from 'react-icons/ri';
+// import { RiContactsLine } from 'react-icons/ri';
 import { MdOutlineSupervisorAccount } from 'react-icons/md';
 import { HiOutlineRefresh } from 'react-icons/hi';
 import { TiTick } from 'react-icons/ti';
-import { GiLouvrePyramid } from 'react-icons/gi';
-import { GrLocation } from 'react-icons/gr';
+// import { GiLouvrePyramid } from 'react-icons/gi';
+// import { GrLocation } from 'react-icons/gr';
 import avatar from './avatar.jpg';
 import avatar1 from './avatar1.jpg';
 import avatar2 from './avatar2.jpg';
@@ -25,7 +28,6 @@ import product4 from './product4.jpg';
 import product5 from './product5.jpg';
 import product6 from './product6.jpg';
 import product7 from './product7.jpg';
-import product8 from './product8.jpg';
 
 export const gridOrderImage = (props) => (
   <div>
@@ -76,12 +78,12 @@ const gridEmployeeProfile = (props) => (
   </div>
 );
 
-const gridEmployeeCountry = (props) => (
-  <div className="flex items-center justify-center gap-2">
-    <GrLocation />
-    <span>{props.Country}</span>
-  </div>
-);
+// const gridEmployeeCountry = (props) => (
+//   <div className="flex items-center justify-center gap-2">
+//     <GrLocation />
+//     <span>{props.Country}</span>
+//   </div>
+// );
 export const EditorData = () => (
   <div>
     <h3>
@@ -218,7 +220,7 @@ export const areaCustomSeries = [
     dataSource: areaChartData[0],
     xName: 'x',
     yName: 'y',
-    name: 'USA',
+    name: 'Losetas',
     opacity: '0.8',
     type: 'SplineArea',
     width: '2',
@@ -228,20 +230,20 @@ export const areaCustomSeries = [
     dataSource: areaChartData[1],
     xName: 'x',
     yName: 'y',
-    name: 'France',
+    name: 'Adoquines',
     opacity: '0.8',
     type: 'SplineArea',
     width: '2',
   },
-  {
-    dataSource: areaChartData[2],
-    xName: 'x',
-    yName: 'y',
-    name: 'Germany',
-    opacity: '0.8',
-    type: 'SplineArea',
-    width: '2',
-  },
+  // {
+  //   dataSource: areaChartData[2],
+  //   xName: 'x',
+  //   yName: 'y',
+  //   name: 'Germany',
+  //   opacity: '0.8',
+  //   type: 'SplineArea',
+  //   width: '2',
+  // },
 ];
 
 export const barChartData = [
@@ -393,18 +395,18 @@ export const barGravaGravillaFino = [
 
 export const colorMappingData = [
   [
-    { x: 'Jan', y: 6.96 },
+    { x: 'Ene', y: 6.96 },
     { x: 'Feb', y: 8.9 },
     { x: 'Mar', y: 12 },
-    { x: 'Apr', y: 17.5 },
+    { x: 'Abr', y: 17.5 },
     { x: 'May', y: 22.1 },
-    { x: 'June', y: 25 },
-    { x: 'July', y: 29.4 },
-    { x: 'Aug', y: 29.6 },
+    { x: 'Jun', y: 25 },
+    { x: 'Jul', y: 29.4 },
+    { x: 'Ago', y: 29.6 },
     { x: 'Sep', y: 25.8 },
     { x: 'Oct', y: 21.1 },
     { x: 'Nov', y: 15.5 },
-    { x: 'Dec', y: 9.9 },
+    { x: 'Dic', y: 9.9 },
   ],
   ['#FFFF99'],
   ['#FFA500'],
@@ -412,17 +414,17 @@ export const colorMappingData = [
 ];
 
 export const rangeColorMapping = [
-  { label: '1°C to 10°C',
+  { label: 'Ladrillo',
     start: '1',
     end: '10',
     colors: colorMappingData[1] },
 
-  { label: '11°C to 20°C',
+  { label: 'Cemento',
     start: '11',
     end: '20',
     colors: colorMappingData[2] },
 
-  { label: '21°C to 30°C',
+  { label: 'No definido',
     start: '21',
     end: '30',
     colors: colorMappingData[3] },
@@ -432,15 +434,15 @@ export const rangeColorMapping = [
 export const ColorMappingPrimaryXAxis = {
   valueType: 'Category',
   majorGridLines: { width: 0 },
-  title: 'Months',
+  title: 'Meses',
 };
 
 export const ColorMappingPrimaryYAxis = {
   lineStyle: { width: 0 },
   majorTickLines: { width: 0 },
   minorTickLines: { width: 0 },
-  labelFormat: '{value}°C',
-  title: 'Temperature',
+  labelFormat: '{value}Tn',
+  title: 'Cantidad',
 };
 
 export const FinancialPrimaryXAxis = {
@@ -463,14 +465,14 @@ export const FinancialPrimaryYAxis = {
 export const LinePrimaryXAxis = {
   valueType: 'DateTime',
   labelFormat: 'y',
-  intervalType: 'Years',
+  intervalType: 'Months',
   edgeLabelPlacement: 'Shift',
   majorGridLines: { width: 0 },
   background: 'white',
 };
 
 export const LinePrimaryYAxis = {
-  labelFormat: '{value}%',
+  labelFormat: '{value}mil Bs',
   rangePadding: 'None',
   minimum: 0,
   maximum: 100,
@@ -572,18 +574,18 @@ export const links = [
   {
     title: 'Paginas',
     links: [
-      {
-        name: 'otros',
-        icon: <AiOutlineShoppingCart />,
-      },
+      // {
+      //   name: 'otros',
+      //   icon: <AiOutlineShoppingCart />,
+      // },
       {
         name: 'funcionarios',
         icon: <IoMdContacts />,
       },
-      {
-        name: 'clientes',
-        icon: <RiContactsLine />,
-      },
+      // {
+      //   name: 'clientes',
+      //   icon: <RiContactsLine />,
+      // },
     ],
   },
   // {
@@ -655,20 +657,20 @@ export const cartData = [
     category: 'Milk product',
     price: '$250',
   },
-  {
-    image:
-      product6,
-    name: 'Supreme fresh tomato',
-    category: 'Vegetable Item',
-    price: '$450',
-  },
-  {
-    image:
-      product7,
-    name: 'Red color candy',
-    category: 'Food Item',
-    price: '$190',
-  },
+  // {
+  //   image:
+  //     product6,
+  //   name: 'Supreme fresh tomato',
+  //   category: 'Vegetable Item',
+  //   price: '$450',
+  // },
+  // {
+  //   image:
+  //     product7,
+  //   name: 'Red color candy',
+  //   category: 'Food Item',
+  //   price: '$190',
+  // },
 ];
 
 export const chatData = [
@@ -679,27 +681,27 @@ export const chatData = [
     desc: 'Congratulate him',
     time: '9:08 AM',
   },
-  {
-    image:
-      avatar3,
-    message: 'New message received',
-    desc: 'Salma sent you new message',
-    time: '11:56 AM',
-  },
-  {
-    image:
-      avatar4,
-    message: 'New Payment received',
-    desc: 'Check your earnings',
-    time: '4:39 AM',
-  },
-  {
-    image:
-      avatar,
-    message: 'Jolly completed tasks',
-    desc: 'Assign her new tasks',
-    time: '1:12 AM',
-  },
+  // {
+  //   image:
+  //     avatar3,
+  //   message: 'New message received',
+  //   desc: 'Salma sent you new message',
+  //   time: '11:56 AM',
+  // },
+  // {
+  //   image:
+  //     avatar4,
+  //   message: 'New Payment received',
+  //   desc: 'Check your earnings',
+  //   time: '4:39 AM',
+  // },
+  // {
+  //   image:
+  //     avatar,
+  //   message: 'Jolly completed tasks',
+  //   desc: 'Assign her new tasks',
+  //   time: '1:12 AM',
+  // },
 ];
 
 export const earningData = [
@@ -936,24 +938,24 @@ export const themeColors = [
 ];
 
 export const userProfileData = [
-  {
-    icon: <BsCurrencyDollar />,
-    title: 'My Profile',
-    desc: 'Account Settings',
-    iconColor: '#03C9D7',
-    iconBg: '#E5FAFB',
-  },
+  // {
+  //   icon: <BsCurrencyDollar />,
+  //   title: 'My Profile',
+  //   desc: 'Account Settings',
+  //   iconColor: '#03C9D7',
+  //   iconBg: '#E5FAFB',
+  // },
   {
     icon: <BsShield />,
-    title: 'My Inbox',
-    desc: 'Messages & Emails',
+    title: 'Perfil',
+    desc: 'Ajustes',
     iconColor: 'rgb(0, 194, 146)',
     iconBg: 'rgb(235, 250, 242)',
   },
   {
     icon: <FiCreditCard />,
-    title: 'My Tasks',
-    desc: 'To-do and Daily Tasks',
+    title: 'Opciones',
+    desc: 'Agregar Usuario',
     iconColor: 'rgb(255, 244, 229)',
     iconBg: 'rgb(254, 201, 15)',
   },
@@ -3117,32 +3119,32 @@ export const scheduleData = [
 
 export const lineChartData = [
   [
-    { x: new Date(2005, 0, 1), y: 21 },
-    { x: new Date(2006, 0, 1), y: 24 },
-    { x: new Date(2007, 0, 1), y: 36 },
-    { x: new Date(2008, 0, 1), y: 38 },
-    { x: new Date(2009, 0, 1), y: 54 },
-    { x: new Date(2010, 0, 1), y: 57 },
-    { x: new Date(2011, 0, 1), y: 70 },
+    { x: new Date(2020, 1, 1), y: 21 },
+    { x: new Date(2021, 2, 1), y: 24 },
+    { x: new Date(2021, 3, 1), y: 36 },
+    { x: new Date(2022, 4, 1), y: 38 },
+    { x: new Date(2022, 5, 1), y: 54 },
+    { x: new Date(2023, 6, 1), y: 57 },
+    { x: new Date(2023, 7, 1), y: 70 },
   ],
   [
-    { x: new Date(2005, 0, 1), y: 28 },
-    { x: new Date(2006, 0, 1), y: 44 },
-    { x: new Date(2007, 0, 1), y: 48 },
-    { x: new Date(2008, 0, 1), y: 50 },
-    { x: new Date(2009, 0, 1), y: 66 },
-    { x: new Date(2010, 0, 1), y: 78 },
-    { x: new Date(2011, 0, 1), y: 84 },
+    { x: new Date(2020, 1, 1), y: 28 },
+    { x: new Date(2021, 2, 1), y: 44 },
+    { x: new Date(2021, 3, 1), y: 48 },
+    { x: new Date(2022, 4, 1), y: 50 },
+    { x: new Date(2022, 5, 1), y: 66 },
+    { x: new Date(2023, 6, 1), y: 78 },
+    { x: new Date(2023, 7, 1), y: 84 },
   ],
 
   [
-    { x: new Date(2005, 0, 1), y: 10 },
-    { x: new Date(2006, 0, 1), y: 20 },
-    { x: new Date(2007, 0, 1), y: 30 },
-    { x: new Date(2008, 0, 1), y: 39 },
-    { x: new Date(2009, 0, 1), y: 50 },
-    { x: new Date(2010, 0, 1), y: 70 },
-    { x: new Date(2011, 0, 1), y: 100 },
+    { x: new Date(2020, 1, 1), y: 10 },
+    { x: new Date(2021, 2, 1), y: 20 },
+    { x: new Date(2021, 3, 1), y: 30 },
+    { x: new Date(2022, 4, 1), y: 39 },
+    { x: new Date(2022, 5, 1), y: 50 },
+    { x: new Date(2023, 6, 1), y: 70 },
+    { x: new Date(2023, 7, 1), y: 100 },
   ],
 ];
 export const dropdownData = [
@@ -3171,7 +3173,7 @@ export const lineCustomSeries = [
   { dataSource: lineChartData[0],
     xName: 'x',
     yName: 'y',
-    name: 'Germany',
+    name: 'UGIRS',
     width: '2',
     marker: { visible: true, width: 10, height: 10 },
     type: 'Line' },
@@ -3179,7 +3181,7 @@ export const lineCustomSeries = [
   { dataSource: lineChartData[1],
     xName: 'x',
     yName: 'y',
-    name: 'England',
+    name: 'Sakachuru',
     width: '2',
     marker: { visible: true, width: 10, height: 10 },
     type: 'Line' },
@@ -3187,7 +3189,7 @@ export const lineCustomSeries = [
   { dataSource: lineChartData[2],
     xName: 'x',
     yName: 'y',
-    name: 'India',
+    name: 'Alpacoma',
     width: '2',
     marker: { visible: true, width: 10, height: 10 },
     type: 'Line' },
@@ -3232,22 +3234,22 @@ export const ecomPieChartData = [
 
 export const stackedChartData = [
   [
-    { x: 'Jan', y: 111.1 },
-    { x: 'Feb', y: 127.3 },
-    { x: 'Mar', y: 143.4 },
-    { x: 'Apr', y: 159.9 },
-    { x: 'May', y: 159.9 },
-    { x: 'Jun', y: 159.9 },
-    { x: 'July', y: 159.9 },
+    { x: 'Ene', y: 1 },
+    { x: 'Feb', y: 1 },
+    { x: 'Mar', y: 2 },
+    { x: 'Abr', y: 1 },
+    { x: 'May', y: 2 },
+    { x: 'Jun', y: 3 },
+    { x: 'Jul', y: 1 },
   ],
   [
-    { x: 'Jan', y: 111.1 },
-    { x: 'Feb', y: 127.3 },
-    { x: 'Mar', y: 143.4 },
-    { x: 'Apr', y: 159.9 },
-    { x: 'May', y: 159.9 },
-    { x: 'Jun', y: 159.9 },
-    { x: 'July', y: 159.9 },
+    { x: 'Ene', y: 1 },
+    { x: 'Feb', y: 1 },
+    { x: 'Mar', y: 2 },
+    { x: 'Abr', y: 1 },
+    { x: 'May', y: 2 },
+    { x: 'Jun', y: 3 },
+    { x: 'Jul', y: 1 },
   ],
 ];
 
@@ -3256,7 +3258,7 @@ export const stackedCustomSeries = [
   { dataSource: stackedChartData[0],
     xName: 'x',
     yName: 'y',
-    name: 'Budget',
+    name: 'Orden de trabajo',
     type: 'StackingColumn',
     background: 'blue',
 
@@ -3265,7 +3267,7 @@ export const stackedCustomSeries = [
   { dataSource: stackedChartData[1],
     xName: 'x',
     yName: 'y',
-    name: 'Expense',
+    name: 'Acción Inmediata',
     type: 'StackingColumn',
     background: 'red',
 
@@ -3286,9 +3288,9 @@ export const stackedPrimaryXAxis = {
 
 export const stackedPrimaryYAxis = {
   lineStyle: { width: 0 },
-  minimum: 100,
-  maximum: 400,
-  interval: 100,
+  minimum: 0,
+  maximum: 8,
+  interval: 2,
   majorTickLines: { width: 0 },
   majorGridLines: { width: 1 },
   minorGridLines: { width: 1 },
@@ -5940,10 +5942,10 @@ export const financialChartData = [
   },
 ];
 export const PyramidData = [
-  { x: 'Sweet Treats', y: 120, text: '120 cal' },
-  { x: 'Milk, Youghnut, Cheese', y: 435, text: '435 cal' },
-  { x: 'Vegetables', y: 470, text: '470 cal' },
-  { x: 'Meat, Poultry, Fish', y: 475, text: '475 cal' },
-  { x: 'Fruits', y: 520, text: '520 cal' },
-  { x: 'Bread, Rice, Pasta', y: 930, text: '930 cal' },
+  { x: 'Buzon de Recepción', y: 2, text: '2 %' },
+  { x: 'Cinta Separadora Magnética', y: 3, text: '3 %' },
+  { x: 'Cinta Transportadora', y: 5, text: '5 %' },
+  { x: 'Criba de Selección', y: 20, text: '20 %' },
+  { x: 'Equipo Mezclador de eje vertical', y: 30, text: '30 %' },
+  { x: 'Maquina modeladora de bloques', y: 40, text: '50 %' },
 ];

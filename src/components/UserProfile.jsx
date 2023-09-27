@@ -55,7 +55,7 @@ const UserProfile = () => {
         <Button
           color="white"
           bgColor={currentColor}
-          text="Logout"
+          text="Cerrar Sesión"
           borderRadius="10px"
           width="full"
         />

@@ -10,7 +10,7 @@ const ColorMapping = () => {
 
   return (
     <div className="m-4 md:m-10 mt-24 p-10 bg-white dark:bg-secondary-dark-bg rounded-3xl">
-      <ChartsHeader category="Almacenes" title="USA CLIMATE - WEATHER BY MONTH" />
+      <ChartsHeader category="Almacenes" title="Almacen 1 y 4: Ladrillo-Cemento-No definido" />
       <div className="w-full">
         <ChartComponent
           id="charts"
@@ -25,7 +25,7 @@ const ColorMapping = () => {
           <SeriesCollectionDirective>
             <SeriesDirective
               dataSource={colorMappingData[0]}
-              name="USA"
+              name="RCD"
               xName="x"
               yName="y"
               type="Column"
